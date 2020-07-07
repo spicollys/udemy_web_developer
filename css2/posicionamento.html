@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Posicionamento
+		</title>
+		<style type="text/css">
+			
+			body {
+				background-color: #61bd8c;
+				padding: 10px;
+				/*
+				O padding delimita uma distância mínima para os elementos no espaço interno.
+				O margin funciona se forma semelhante, só que para o espaço externo.
+				*/
+			}
+
+			.main_content {
+				background-color: #FFFFFF;
+				padding: 10px;
+				width: 600px;
+				margin: 30px auto;
+				/*
+				position: relative;
+				O auto nesse caso permite que o conteúdo fique centralizado na tela.
+				*/
+
+			}
+
+			.box {
+				background-color: #1e6f44;
+				width: 100px;
+				height: 100px;
+				color: white;
+			}
+
+			#relative {
+				position: relative;
+				/*
+				left: -10px;
+				top: 0px;
+				width 660px;
+				posicionamento relativo permite que você movimente um objeto baseado na sua posição inicial. É possível aplicar também valores negativos.
+				*/
+
+
+			}
+
+			#absolute {
+				position: absolute;
+
+				/*
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				Posicionamento absoluto faz com que o elemento seja ignorado pelo elemento pai. Ele deixa de fazer parte do fluxo comum do documento e o espaço destinado a ele deixa de existir no documento. Neste caso, ele ficará fixo numa posição referente ao body.
+
+				Para o melhor uso do fixed observar Box_Models.html 
+				*/
+
+			}
+
+			#fixed {
+				position: fixed;
+
+				/*
+				O position fixed se comporta de maneira semelhante ao absolute, deixando de fazer parte do fluxo comum da página. Porém a grande diferença dele é que ele passa a se referenciar ao window do seu navegador, ou seja, a área que aparece para o usuário independente de barra de rolagem.
+				*/
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="main_content">
+			<h1>Posicionamento</h1>
+			
+			<div class="box" id="relative"> 
+				<h4>Relative</h4>
+			</div>
+
+			<div class="box" id="absolute">
+				<h4>Absolute</h4>
+			</div>
+
+			<div class="box" id="fixed">
+				<h4>Fixed</h4>
+			</div>
+		</div>
+	</body>
+</html>

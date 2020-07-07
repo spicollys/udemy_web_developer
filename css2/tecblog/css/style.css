@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0; 
+}
+
+body {
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f3f3f3;
+}
+
+#navigation {
+	background: #fff;
+	border-bottom: 1px solid #d8d8d8;
+	height: 45px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#area {
+	width: 720px;
+	margin: 0 auto;
+}
+
+#main_area{
+	width: 720px;
+	margin: 55px auto 10px auto;
+}
+
+#publication{
+	background-color: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+
+}
+
+.img_publication{
+	float: left;
+	margin: 0px 10px 5px 0px;
+}
+
+.date {
+	font-size: 14px;
+	border-bottom: 1px solid #f4f4f4;
+	display: block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.published {
+	margin-top: 10px;
+	display: block;
+	padding-left: 5px;
+	border-left: 5px solid #d8d8d8;
+}
+
+#logo {
+	float: left;
+}
+
+h2 {
+	color: #b9c941;
+}
+
+/*Formatação do menu*/
+
+a {
+	text-decoration: none;
+	padding: 5px 10px;
+}
+
+/*Links não visitados*/
+a:link {
+	color: #838383;
+}
+/*Links visitados*/
+a:visited {
+	color: #838383;
+}
+/*Links hover*/
+a:hover {
+	color: #fff;
+	background-color: #b9c941;
+}
+/*Links active*/
+a:active {
+	color: #535353;
+}
+
+
+#menu {
+	float: right;
+	padding: 10px;
+}
+
+
+
+.green {
+	color: #b9c941;
+}

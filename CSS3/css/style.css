@@ -1,0 +1,103 @@
+/* Transparência */
+
+/*
+#box {
+	width: 300px;
+	height: 300px;
+	background: url("../img/camera.png"); <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	font-family: Arial;
+
+}
+
+#box h1{
+	background: rgba(255, 255, 255, 0.5); <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	border-bottom: 2px solid #fff;
+}
+*/
+
+/* Degradê */
+/*
+#box {
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(purple, pink); <<<<<<<<<<<<<<<<<<<<<<<<<<<<
+	color: #fff;
+	font-family: Arial;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 15px;
+}
+*/
+
+/* Sombras */
+
+/*
+#box {
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background: linear-gradient(#009670, green); 
+	color: white;
+	border-radius: 0px 80px;
+	box-shadow: -10px 10px 5px rgba(0,0,0,0.5); 
+}
+
+#box h1 {
+	font-family: Trebuchet MS;
+	color: white;
+	font-size: 60px;
+	text-shadow: -5px 5px 5px rgba(0,0,0,0.5); 
+
+
+	/*Primeiro parâmetro, move esquerda ou direita 
+	Segundo parâmetro, move acima ou abaixo
+	Terceiro parâmetro aplica desfoque (blur) na sombra 
+	Quarto parâmetro é o spread, o quanto a sombra se espalha
+	Quinto parâmetro é a cor, em que se utilizado o padrão 
+	rgba é possível definir a transparência da sombra.
+	
+	É possível sobrepor sombras, apenas repetindo os parâmetros 
+	através da vírgula.
+
+}
+*/
+
+/* Animações */
+/*
+@keyframes animacao_box {
+
+	from {background: red; border-radius: 0px; top: 0px; left: 0px;}
+	to {background: blue;
+		border-radius: 200px; 
+		top: 200px; left: 200px;}
+
+}
+
+#box_animacao {
+	background: red;
+	width: 200px;
+	height:200px;
+	position: relative;
+	/*animation-name: animacao_box;
+	animation-duration: 0.5s;
+	animation-delay: 1s;
+	animation-iteration-count: 10;
+	animation-direction: alternate;
+	
+	animation: animacao_box 5s 3s 2 alternate; <<<resumo das 5 linhas acima
+}
+*/
+
+/* Transições */
+#box_transicao {
+	width: 300px;
+	height: 300px;
+	background: orange;
+}
+
+#box_transicao:hover{
+	background: orange;
+	width: 800px;
+	transition: all 1.5s;
+}
