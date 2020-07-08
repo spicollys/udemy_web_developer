@@ -13,3 +13,32 @@
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
 }
+
+.white {
+	color: white;
+}
+
+.navbar-a a{
+		padding: 10px;
+	}
+
+	a:link{
+		color: #fff;
+	}
+
+	a:visited{
+		color: #fff;
+	}
+
+	a:hover {
+		color: #FFF;
+	}
+
+	a:active {
+		color: #e4f371;
+	}
+
+}
+
+
+
