@@ -20,22 +20,7 @@
 
 .navbar-a a{
 		padding: 10px;
-	}
-
-	a:link{
-		color: #fff;
-	}
-
-	a:visited{
-		color: #fff;
-	}
-
-	a:hover {
-		color: #FFF;
-	}
-
-	a:active {
-		color: #e4f371;
+		text-decoration: none;
 	}
 
 }
