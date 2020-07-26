@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Changing CSS Style with JQuery</title>
+
+</head>
+<body>
+
+	<div id="square" style="
+		background: #000; 
+		height: 100px; 
+		width: 100px;">		
+	</div>
+
+	<footer>
+		<!--cdn-->
+		<script 
+			src="https://code.jquery.com/jquery-3.5.1.js" 
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+			crossorigin="anonymous">		
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+				
+				$('div').click(function(){
+					if($('#square').css('background-color') == 'rgb(0, 0, 0)'){
+						$('#square').css('background', 'red');
+						$('#square').html('Hello World').css('color', 'white').css('text-align', 'center');
+					}else{
+						$('#square').css('background', 'black');
+						$('#square').html('');
+					}
+				});
+
+			});
+ 		</script>
+	</footer>
+</body>
+</html>

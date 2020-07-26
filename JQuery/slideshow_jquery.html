@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slideshow with JQuery</title>
+</head>
+<body>
+
+	<div align="center">
+		<img id="img1" src="img/cover1.jpg">
+		<img id="img2" src="img/cover2.jpg" style="display: none">
+		<img id="img3" src="img/cover3.jpg" style="display: none">
+		<img id="img4" src="img/cover4.png" style="display: none">
+	</div>
+
+	<br>
+
+	<div align="center" style="font-size: 25px;">
+		<a href="#" id="link1">1</a>
+		<a href="#" id="link2">2</a>
+		<a href="#" id="link3">3</a>
+		<a href="#" id="link4">4</a>	
+	</div>
+
+	<footer>
+		<!--cdn-->
+		<script 
+			src="https://code.jquery.com/jquery-3.5.1.js" 
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+			crossorigin="anonymous">		
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+				$('#link1').click(function(){
+					$('#img1').show();
+					$('#img2').hide();
+					$('#img3').hide();
+					$('#img4').hide();
+				});
+
+				$('#link2').click(function(){
+					$('#img1').hide();
+					$('#img2').show();
+					$('#img3').hide();
+					$('#img4').hide();
+				});
+
+				$('#link3').click(function(){
+					$('#img1').hide();
+					$('#img2').hide();
+					$('#img3').show();
+					$('#img4').hide();
+				});
+
+				$('#link4').click(function(){
+					$('#img1').hide();
+					$('#img2').hide();
+					$('#img3').hide();
+					$('#img4').show();
+				});
+
+			})
+ 		</script>
+	</footer>
+</body>
+</html>

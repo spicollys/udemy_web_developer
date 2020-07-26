@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding Classes with JQuery</title>
+	<style type="text/css">
+		.green{background: green;}
+	</style>
+
+</head>
+<body>
+	
+	<div id="square1" style="
+		height: 100px;
+		width: 100px;
+		border: 1px solid black;
+		text-align: center;">Mouse Over Here
+	</div>
+	<br>
+	<div style="width: 100px; text-align: center;">
+		<span id="span1">Span</span>		
+	</div>
+	<br>
+	<div align="center" style="width: 100px;">
+		<button id="button1">Button</button>
+	</div>
+
+	<footer>
+		<!--cdn-->
+		<script 
+			src="https://code.jquery.com/jquery-3.5.1.js" 
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+			crossorigin="anonymous">		
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+				$('#square1').mouseover(function(){
+					$('#square1').addClass('green');
+					$('#button1').addClass('green');
+					$('#span1').addClass('green');
+				});
+
+				$('#square1').mouseout(function(){
+					$('#square1').removeClass('green');
+					$('#button1').removeClass('green');
+					$('#span1').removeClass('green');
+				});
+				
+			});
+ 		</script>
+	</footer>
+</body>
+</html>

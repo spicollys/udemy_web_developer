@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storing Messages and CSS chain</title>
+</head>
+<body>
+	<div id="square1" style="
+		background: #000; 
+		height: 100px; 
+		width: 100px;">
+	</div>
+	<div><span id="span1"></span>		
+	</div>
+
+	<footer>
+		<!--cdn-->
+		<script 
+			src="https://code.jquery.com/jquery-3.5.1.js" 
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+			crossorigin="anonymous">		
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+
+				$('#square1').mouseover(function(){
+					$('#span1')
+						.text('Hello World')
+						.css({
+							background: '#000', 
+							color: 'white',
+						});
+				});
+				$('#square1').mouseout(function(){
+					$('#span1').text('');
+				});
+
+			});
+ 		</script>
+	</footer>
+</body>
+</html>

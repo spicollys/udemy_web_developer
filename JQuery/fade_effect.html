@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fade Effect and Delay with JQuery</title>
+
+</head>
+<body>
+	
+	<div id="square1" style="
+		background: #000; 
+		height: 100px; 
+		width: 100px;">	
+	</div>
+	<br>
+	<div id="square2" style="
+		background: #000; 
+		height: 100px; 
+		width: 100px;">		
+	</div>
+
+	<footer>
+		<!--cdn-->
+		<script 
+			src="https://code.jquery.com/jquery-3.5.1.js" 
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+			crossorigin="anonymous">		
+		</script>
+
+		<script type="text/javascript">
+			$(function(){
+
+				$('#square1').click(function(){
+					$('#square1').fadeOut(1000);
+					$('#square1').fadeIn(3000);
+					$('#square1').html('Fade Out and Fade In').css('text-align', 'center').css('color', 'white');
+				
+				});
+
+				$('#square2').click(function(){
+					$('#square2').delay(3000);
+					$('#square2').fadeOut();
+					$('#square2').fadeIn();
+					$('#square2').html('3 sec delay').css('text-align', 'center').css('color', 'white');
+				});
+
+			});
+ 		</script>
+	</footer>
+</body>
+</html>
